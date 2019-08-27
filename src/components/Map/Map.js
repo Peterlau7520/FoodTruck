@@ -6,7 +6,7 @@ import styles from './Map.module.css'
 const Map = (props) => (
     <div className={styles.map}>  
         <GoogleMapReact
-                    bootstrapURLKeys={{ key: "AIzaSyBEUeOa7MjFeBZPWNTBnlBZU8Hlvukhyqo"}}
+                    bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API}}
                     center={props.center}
                     zoom={13}
                 >
